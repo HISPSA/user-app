@@ -209,6 +209,12 @@ msgstr ""
 msgid "Data predictor group"
 msgstr ""
 
+msgid "Approval Validation Rule"
+msgstr ""
+
+msgid "Data Elements By Organisation Unit"
+msgstr ""
+
 msgid "Apps"
 msgstr ""
 

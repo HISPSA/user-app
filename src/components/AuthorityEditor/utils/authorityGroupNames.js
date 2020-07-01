@@ -62,4 +62,6 @@ export default new Map([
     ['F_VALIDATIONRULEGROUP', i18n.t('Validation Rule Group')],
     ['F_VALIDATIONRULE', i18n.t('Validation Rule')],
     ['F_PREDICTORGROUP', i18n.t('Data predictor group')],
+    ['F_APPROVAL_VALIDATIONRULE', i18n.t('Approval Validation Rule')],
+    ['F_DATAELEMENTS_BY_ORGANISATIONUNIT', i18n.t('Data Elements By Organisation Unit')],
 ]);
