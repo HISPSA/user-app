@@ -704,3 +704,9 @@ msgstr ""
 
 msgid "There was a problem checking if this attribute value is unique"
 msgstr ""
+
+msgid "Approval Validation Rule"
+msgstr ""
+
+msgid "Data Elements By Organisation Unit"
+msgstr ""
