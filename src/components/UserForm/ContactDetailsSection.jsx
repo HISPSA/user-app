@@ -1,14 +1,21 @@
 import i18n from '@dhis2/d2-i18n'
+import { composeValidators, hasValue } from '@dhis2/ui'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { FormSection, TextField } from '../Form.jsx'
+import { validateSouthAfricanPhoneNumber } from './validators.js'
 
 const ContactDetailsSection = React.memo(({ user }) => (
     <FormSection title={i18n.t('Contact details')}>
         <TextField
+            required
             name="phoneNumber"
             label={i18n.t('Mobile phone number')}
             initialValue={user?.phoneNumber}
+            validate={composeValidators(
+                hasValue,
+                validateSouthAfricanPhoneNumber
+            )}
         />
         <TextField
             name="whatsApp"

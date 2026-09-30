@@ -19,6 +19,12 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# local task and tooling files
+/codex_task.md
+/skills-lock.json
+/debug/
+/.agents/
+
 # generated files
 src/locales
 docs

@@ -4,6 +4,15 @@ import { composeValidators, hasValue, dhis2Username } from '@dhis2/ui'
 import pDebounce from 'p-debounce'
 import { useValidator } from '../../hooks/useValidator.js'
 
+export const validateSouthAfricanPhoneNumber = (value) => {
+    // Unlike $, this end assertion also rejects a trailing line break.
+    if (!/^(?:0\d{9}|\+27\d{9})(?![\s\S])/.test(value)) {
+        return i18n.t(
+            'Enter a valid South African phone number (e.g. 0821234567 or +27821234567)'
+        )
+    }
+}
+
 export const useDebouncedUniqueUsernameValidator = ({
     username: currentUsername,
 }) => {

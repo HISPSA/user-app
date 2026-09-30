@@ -77,15 +77,11 @@ const BasicInformationSection = React.memo(
                     validate={validateUserName}
                 />
                 <EmailField
-                    required={inviteUser === INVITE_USER}
+                    required
                     name="email"
                     label={i18n.t('Email address')}
                     initialValue={user?.email}
-                    validate={
-                        inviteUser === INVITE_USER
-                            ? composeValidators(hasValue, email)
-                            : email
-                    }
+                    validate={composeValidators(hasValue, email)}
                 />
 
                 {displayEmailVerifiedStatus && user && (

@@ -1,5 +1,21 @@
 Feature: A user can be edited
 
+    Scenario Outline: Missing compulsory contact information prevents editing a legacy user
+        Given a user without <input> exists
+        And the user-manager is editing that user
+        When the user-manager changes the firstName field
+        Then the user-manager should not be able to submit the form
+        When the user-manager supplies valid compulsory contact information
+            | email       | updated.user@example.com |
+            | phoneNumber | +27821234567             |
+        And the user-manager submits the form
+        Then the user should be saved with the new value
+
+        Examples:
+            | input       |
+            | email       |
+            | phoneNumber |
+
     # input fields
     Scenario Outline: A <input> is added to an account
         Given a user without <input> exists

@@ -687,6 +687,9 @@ msgstr "Error updating user"
 msgid "Error creating user"
 msgstr "Error creating user"
 
+msgid "Enter a valid South African phone number (e.g. 0821234567 or +27821234567)"
+msgstr "Enter a valid South African phone number (e.g. 0821234567 or +27821234567)"
+
 msgid "Username already taken"
 msgstr "Username already taken"
 
